@@ -1,0 +1,21 @@
+#' Deviazione standard campionaria
+#'
+#' Calcola la deviazione standard di un vettore numerico
+#' utilizzando la formula con correzione di Bessel (n - 1).
+#'
+#' @param x Un vettore numerico.
+#'
+#' @return Un valore numerico che rappresenta la deviazione standard del vettore.
+#'
+#' @details
+#' La funzione calcola la deviazione standard come:
+#' sqrt(sum((x - mean(x))^2) / (length(x) - 1))
+#'
+#' @examples
+#' x <- c(1, 2, 3, 4, 5)
+#' deviazione(x)
+#'
+#' @export
+deviazione = function(x){
+  sqrt(sum((x - mean(x))^2) / (length(x) - 1))
+}
