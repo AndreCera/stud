@@ -1,10 +1,5 @@
-media = function(x,y){
-z = (x + y ) / 2
-z
-}
 deviazione = function(x){
-z = (x - mean(x)) / (length(x) - 1)
-z
+sqrt(sum((x - mean(x))^2) / (length(x) - 1))
 }
 
 
